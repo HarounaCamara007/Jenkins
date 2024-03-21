@@ -5,6 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Bienvenu à Simplon'
+                sh '''
+                #!bin/bash
+                ls -lrt
+                '''
             }
         }
         stage('Test') {
